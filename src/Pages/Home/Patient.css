@@ -1,0 +1,69 @@
+/* Slider Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: rgb(66, 135, 245); /* Success Green */
+  width: 25px; /* Pill shape for active dot */
+  border-radius: 10px;
+}
+
+/* Google Review Footer */
+.google-review-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.google-review-badge img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.badge-text {
+  text-align: left;
+  line-height: 1.2;
+}
+
+.rating-num {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.rating-stars {
+  color: #fbbc05; /* Google Yellow */
+  letter-spacing: 1px;
+}
+
+.review-count {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #666;
+}
+
+/* Fix for Video Container */
+.video-box video {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}

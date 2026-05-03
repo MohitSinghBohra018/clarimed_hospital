@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clarimed Healthcare</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/daterangepicker.css">
+   <link rel="stylesheet" href="assets/css/range-slider.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+
+     <script>
+    const reviews = [
+        { name: "Mohit Kumar", initial: "M", stars: "★★★★★", text: "The medical care was beyond my expectations. The team was supportive and professional throughout." },
+        { name: "Saurabh Singh", initial: "S", stars: "★★★★★", text: "Best diagnostic center in the city. Results were accurate and delivered on time. Thank you!" },
+        { name: "Priya Sharma", initial: "P", stars: "★★★★☆", text: "Doctors are very experienced. The facility is clean and well-maintained. Highly recommended." }
+    ];
+
+    let current = 0;
+    const dotContainer = document.getElementById('dot-container');
+
+    // Create Navigation Dots
+    reviews.forEach((_, i) => {
+        const d = document.createElement('div');
+        d.className = `dot ${i === 0 ? 'active' : ''}`;
+        d.onclick = () => showReview(i);
+        dotContainer.appendChild(d);
+    });
+
+    function showReview(index) {
+        current = index;
+        const card = document.getElementById('review-card');
+        
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(10px)';
+
+        setTimeout(() => {
+            const data = reviews[current];
+            document.getElementById('stars-ui').innerText = data.stars;
+            document.getElementById('text-ui').innerText = `"${data.text}"`;
+            document.getElementById('name-ui').innerText = data.name;
+            document.getElementById('avatar-ui').innerText = data.initial;
+
+            // Update Dots
+            document.querySelectorAll('.dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === current);
+            });
+
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 300);
+    }
+
+    // Auto Slide every 5 seconds
+    setInterval(() => {
+        current = (current + 1) % reviews.length;
+        showReview(current);
+    }, 5000);
+</script>
+   
+<script src="script.js"></script>
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js"></script>
+   <script src="assets/js/bootstrap-bundle.js"></script>
+   <script src="assets/js/swiper-bundle.js"></script>
+   <script src="assets/js/magnific-popup.js"></script>
+   <script src="assets/js/nice-select.js"></script>
+   <script src="assets/js/range-slider.js"></script>
+   <script src="assets/js/purecounter.js"></script>
+   <script src="assets/js/moment.min.js"></script>
+   <script src="assets/js/daterangepicker.js"></script>
+   <script src="assets/js/btnloadmore.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/slider-init.js"></script>
+   <script src="assets/js/main.js"></script>
+  </body>
+</html>
