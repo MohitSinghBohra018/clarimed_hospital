@@ -107,6 +107,9 @@ const ContactUs = () => {
                             <span>Call Us Directly</span>
                             <a href={`tel:${settings?.phone}`}>
                               {settings?.phone || "Loading..."}
+                            </a><br/>
+                             <a href={`tel:${settings?.phone}`}>
+                              {settings?.phone2 }
                             </a>
                           </div>
                         </div>
@@ -143,6 +146,11 @@ const ContactUs = () => {
                             <span>Need Support?</span>
                             <a href={`mailto:${settings?.email}`}>
                               {settings?.email || "Loading..."}
+                              
+                            </a><br></br>
+                             <a href={`mailto:${settings?.email}`}>
+                              {settings?.email2 || "Loading..."}
+                              
                             </a>
                           </div>
                         </div>

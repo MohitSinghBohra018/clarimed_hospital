@@ -117,8 +117,8 @@ const Footer = () => {
                   </h3>
                    <div className="tp-footer-widget-menu">
                      <ul>
-                       <li><Link to="/terms-condition">Privacy Policy</Link></li>
-                       <li><Link to="/privacy-policy">Terms and Conditions</Link></li>
+                       <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                       <li><Link to="/terms-condition">Terms and Conditions</Link></li>
                      
                      </ul>
                   </div>
@@ -155,7 +155,37 @@ const Footer = () => {
               </div>
 
             </div>
+            {/* Legal Disclaimer Section */}
+<div className="tp-footer-bottom-notice border-top mt-50 pt-15 pb-15">
+  <div className="container">
+    <div className="row">
+      <div className="col-12 text-center">
+     <p style={{ 
+  color: 'white', 
+  fontSize: '14px', 
+  lineHeight: '1.6', 
+  // maxWidth: '1000px', 
+  margin: '0 auto' 
+}}>
+  By using our site, you agree to our{' '}
+  <Link to="/terms-condition" style={{ textDecoration: 'underline', color: 'inherit' }}>
+    Terms and Conditions
+  </Link> and {' '}
+  <Link to="/privacy-policy" style={{ textDecoration: 'underline', color: 'inherit' }}>
+    Privacy Policy  {' '}
+  </Link> 
+
+   ClariMed Healthcare is a dedicated partner for both domestic and international patients, providing streamlined access to a global network of accredited hospitals and world-class specialists. 
+  We simplify the medical journey through transparency and expert coordination, empowering patients to make informed decisions. 
+  Note: Our services support and enhance—rather than replace—the patient-physician relationship. ClariMed does not provide medical diagnoses. 
+  
+</p>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
+          
         </div>
 
         {/* Bottom */}

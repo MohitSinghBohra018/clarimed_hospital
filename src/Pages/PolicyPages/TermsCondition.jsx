@@ -86,39 +86,7 @@ const TermsCondition = () => {
                   </p>
                 </div>
 
-                {/* Contact Card Design */}
-                <div className="contact-design mt-5 p-4 rounded-4 shadow-sm" style={{ border: '1px solid #e2e8f0', backgroundColor: '#fcfcfc' }}>
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="p-3 bg-primary-light rounded-circle me-3" style={{ backgroundColor: '#eef4ff' }}>
-                      <FileText size={32} className="text-primary" />
-                    </div>
-                    <div>
-                      <h5 className="fw-bold mb-0">Legal & Compliance Office</h5>
-                      <p className="small text-muted mb-0">For questions regarding our legal terms</p>
-                    </div>
-                  </div>
-
-                  <div className="row g-4">
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <Mail className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">legal@clarimed.com</span>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <Phone className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">+1 (555) 012-3456</span>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <MapPin className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">Main Wing, New Delhi</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            
 
               </div>
 

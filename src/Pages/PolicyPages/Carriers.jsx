@@ -127,6 +127,9 @@ const Carriers = () => {
                     <h6 className="fw-bold">Email Address</h6>
                     <a href={`mailto:${settings?.email}`}>
                       {settings?.email || "Loading..."}
+                    </a><br></br>
+                     <a href={`mailto:${settings?.email}`}>
+                      {settings?.email2 }
                     </a>
                   </div>
                 </div>
@@ -138,6 +141,9 @@ const Carriers = () => {
                     <h6 className="fw-bold">Phone Number</h6>
                     <a href={`tel:${settings?.phone}`}>
                       {settings?.phone || "Loading..."}
+                    </a><br></br>
+                     <a href={`tel:${settings?.phone}`}>
+                      {settings?.phone2}
                     </a>
                   </div>
                 </div>

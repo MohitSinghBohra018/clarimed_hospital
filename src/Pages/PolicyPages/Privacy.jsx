@@ -37,7 +37,7 @@ const Privacy = () => {
       <section className="py-5" style={{ backgroundColor: '#ffffff' }}>
         <div className="container">
           <div className="row justify-content-start">
-            <div className="col-lg-9">
+            <div className="col-lg-12">
               
               <div className="privacy-text-content">
                 
@@ -88,38 +88,7 @@ const Privacy = () => {
                 </div>
 
                 {/* Contact Card Design */}
-                <div className="contact-design mt-5 p-4 rounded-4 shadow-sm" style={{ border: '1px solid #e2e8f0', backgroundColor: '#fcfcfc' }}>
-                  <div className="d-flex align-items-center mb-4">
-                    <div className="p-3 bg-primary-light rounded-circle me-3" style={{ backgroundColor: '#eef4ff' }}>
-                      <ShieldCheck size={32} className="text-primary" />
-                    </div>
-                    <div>
-                      <h5 className="fw-bold mb-0">Privacy Support Team</h5>
-                      <p className="small text-muted mb-0">Reach out for any data-related concerns</p>
-                    </div>
-                  </div>
-
-                  <div className="row g-4">
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <Mail className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">privacy@clarimed.com</span>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <Phone className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">+1 (555) 012-3456</span>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <div className="d-flex align-items-center">
-                        <MapPin className="text-primary me-2" size={18} />
-                        <span className="small fw-semibold">ClariMed HQ, New Delhi</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
 
               </div>
 
