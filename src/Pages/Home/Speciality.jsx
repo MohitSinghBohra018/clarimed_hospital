@@ -16,7 +16,7 @@ const Speciality = () => {
 
         // ✅ Filter only featured
         const featured = deptData.filter(
-          (item) => item.is_featured === "1"
+          (item) => item.is_featured == "1"
         );
 
         setDepartments(featured);

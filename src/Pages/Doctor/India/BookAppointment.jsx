@@ -188,6 +188,25 @@ const validateForm = () => {
   return `${hours}:${minutes.substring(0, 2)} ${ampm}`;
 };
 
+  // ✅ Filter out past slots for today
+  const isToday = (dateString) => {
+    const today = new Date().toLocaleDateString('sv-SE');
+    return dateString === today;
+  };
+
+  const isTimeInFuture = (timeString) => {
+    const now = new Date();
+    const [hours, minutes] = timeString.split(':').map(Number);
+    const slotTime = new Date();
+    slotTime.setHours(hours, minutes, 0, 0);
+    return slotTime > now;
+  };
+
+  const filteredSlots = availableSlots.filter((slot) => {
+    if (!isToday(selectedDate)) return true; // Future dates: show all
+    return isTimeInFuture(slot.start_time);  // Today: only future slots
+  });
+
   if (loading) return <div className="text-center p-5">Loading...</div>;
 
   return (
@@ -237,10 +256,10 @@ const validateForm = () => {
                     ))}
                   </div>
                   <div className="mt-4 pt-3 border-top">
-                    {slotsLoading ? <div className="text-center">Loading slots...</div> : availableSlots.length > 0 ? (
+                    {slotsLoading ? <div className="text-center">Loading slots...</div> : filteredSlots.length > 0 ? (
                       <div className="row g-2">
                       {/* Replace the old mapping logic with this */}
-{availableSlots.map((slot) => (
+{filteredSlots.map((slot) => (
   <div key={slot.id} className="col-6 col-md-3">
     <button 
       onClick={() => setSelectedTime(slot.start_time)} 

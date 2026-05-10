@@ -709,7 +709,8 @@ function Header() {
   return (
     <>
       <header className="tp-header-height">
-        <div className="tp-header-top-area tp-header-top-spacing border-bottom d-none d-md-block">
+        {/* <div className="tp-header-top-area tp-header-top-spacing border-bottom d-none d-md-block"> */}
+      <div className="tp-header-top-area tp-header-top-spacing border-bottom d-none d-xl-block w-full">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-3 col-md-3">
@@ -1191,7 +1192,7 @@ function Header() {
           id="header-sticky"
           className="tp-header-area tp-header-one tp-header-blur p-relative"
         >
-          <div className="container">
+         <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xl-10 d-none d-xl-block">
                 <div className="tp-main-menu tp-menu-dropdown">

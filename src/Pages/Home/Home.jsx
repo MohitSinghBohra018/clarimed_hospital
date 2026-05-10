@@ -23,12 +23,12 @@ const Home = () => {
       <HospitalLocation />
       <SpecialistDoctor />
       <TreatmentPackages />
-      <HowWork />
-      <WhyChoose />
-      <Blogs />
-      <Patient />
+      <HowWork/>
+      <WhyChoose/>
+      <Blogs/>
+      <Patient/>
       <ScheduleSurgery />
-      <Faqs />
+      <Faqs/>
     </>
   );
 };

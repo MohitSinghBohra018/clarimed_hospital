@@ -13,7 +13,7 @@ const SpecialistDoctor = () => {
     CommonService.getDoctors()
       .then((res) => {
         if (res.success && Array.isArray(res.data)) {
-          const featured = res.data.filter(doc => doc.is_featured === "1");
+          const featured = res.data.filter(doc => doc.is_featured == "1");
           setDoctors(featured);
         }
       })

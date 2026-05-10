@@ -1,4 +1,4 @@
-﻿
+﻿sty
 /* @import url('../../../../css2'); */
 .back-to-top-wrapper, a,
 button,
@@ -15762,3 +15762,14 @@ background-color: #005daa;
   transform: scale(1.1);
   background-color: #1ebe5d;
 }
+
+
+
+/*  */
+
+
+/* @media (min-width: 768px) {
+  #header-sticky {
+    background-color: blue;
+  }
+} */

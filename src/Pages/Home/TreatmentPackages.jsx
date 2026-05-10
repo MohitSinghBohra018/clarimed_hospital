@@ -67,7 +67,7 @@ useEffect(() => {
 
       if (res.success && Array.isArray(res.data)) {
         const featuredPackages = res.data.filter(
-          (pkg) => pkg.is_featured === "1"
+          (pkg) => pkg.is_featured == "1"
         );
 
         setPackages(featuredPackages);
