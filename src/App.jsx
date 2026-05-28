@@ -42,7 +42,7 @@ import WhatsAppButton from "./Pages/WhatsAppButton";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/clarimed_hospital">
+      <BrowserRouter basename="/">
  <WhatsAppButton/>
         <Header />
         <Routes>

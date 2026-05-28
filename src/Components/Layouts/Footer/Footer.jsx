@@ -80,7 +80,7 @@ const Footer = () => {
                        <li><Link to="/our-teams">Our Team</Link></li>
                          <li><Link to="/contact-us">Contact Us</Link></li>
                          <li><Link to="/carrier">Careers</Link></li>
-                              <li><a href="/clarimed_hospital/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a></li>
+                       <li><a href="/sitemap.xml" target="_blank" rel="noopener noreferrer">Sitemap</a></li>
                      
                      </ul>
                   </div>

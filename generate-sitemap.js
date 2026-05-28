@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 // 1. Change this to your live domain name
 const BASE_URL = 'https://clarimedhealthcare.com'; 
-const BASENAME = '/clarimed_hospital'; // Matches your React basename
+const BASENAME = '/'; // Matches your React basename
 
 // 2. Your exact routes from App.jsx
 const staticRoutes = [
